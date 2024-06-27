@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "light_craft:item/hot_milk_bottle"
+  }
+}
