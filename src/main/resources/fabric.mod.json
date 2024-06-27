@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "light_craft",
+	"version": "${version}",
+	"name": "Light Craft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Lingyi_Bit",
+		"Moyu_God"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/light_craft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.lightcraft.LightCraft"
+		],
+		"fabric-datagen": [
+			"name.lightcraft.LightCraftDataGenerator"
+		],
+		"client": [
+			"name.lightcraft.LightCraftClient"
+		]
+
+	},
+	"mixins": [
+		"light_craft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
