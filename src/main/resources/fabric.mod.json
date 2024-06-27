@@ -9,8 +9,7 @@
 		"Moyu_God"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/0bit-1024/Light_Craft-1.21"
 	},
 	"license": "GPL-3.0",
 	"icon": "assets/light_craft/icon.png",
