@@ -18,13 +18,16 @@ public class Prospector extends Item {
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         // Judgment between client and server
+        // 客户（服务）端的判断
         if (!world.isClient) {
             BlockPos blockPos = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
             boolean foundBlock = false;
 
-            /* Found the ore through looping from the bottom of the world to
-                the current position of the block that the player's cursor is pointing at */
+            /*
+            Found an ore through looping from
+            the current position of the block that the player's cursor is pointing at to down for 48 blocks
+            */
             for (int i = blockPos.getY(); i >= blockPos.getY()-48; i--){
                 BlockState blockState = context.getWorld().getBlockState(
                         new BlockPos(blockPos.getX(), i, blockPos.getZ()));

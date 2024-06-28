@@ -1,5 +1,6 @@
 package name.lightcraft;
 
+import name.lightcraft.item.ModItemGroups;
 import name.lightcraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class LightCraft implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
+
 		LightCraft.LOGGER.info("Hello Fabric world!");
 	}
 }

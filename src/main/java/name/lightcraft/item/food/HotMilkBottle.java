@@ -35,9 +35,25 @@ public class HotMilkBottle extends Item {
             serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         }
 
-        //remove all negative effects
         if (!world.isClient) {
-            removeAllNegativeEffects(user);
+            //remove all negative effects
+            //消除所有负面影响
+            user.removeStatusEffect(StatusEffects.SLOWNESS);
+            user.removeStatusEffect(StatusEffects.MINING_FATIGUE);
+            user.removeStatusEffect(StatusEffects.INSTANT_DAMAGE);
+            user.removeStatusEffect(StatusEffects.NAUSEA);
+            user.removeStatusEffect(StatusEffects.BLINDNESS);
+            user.removeStatusEffect(StatusEffects.HUNGER);
+            user.removeStatusEffect(StatusEffects.WEAKNESS);
+            user.removeStatusEffect(StatusEffects.POISON);
+            user.removeStatusEffect(StatusEffects.WITHER);
+            user.removeStatusEffect(StatusEffects.LEVITATION);
+            user.removeStatusEffect(StatusEffects.UNLUCK);
+            user.removeStatusEffect(StatusEffects.DARKNESS);
+            user.removeStatusEffect(StatusEffects.WIND_CHARGED);
+            user.removeStatusEffect(StatusEffects.WEAVING);
+            user.removeStatusEffect(StatusEffects.OOZING);
+            user.removeStatusEffect(StatusEffects.INFESTED);
         }
 
         if (stack.isEmpty()) {
@@ -54,41 +70,6 @@ public class HotMilkBottle extends Item {
 
             return stack;
         }
-    }
-
-    private void removeAllNegativeEffects(LivingEntity entity) {
-        Set<StatusEffectInstance> negativeEffectsToRemove = new HashSet<>();
-        //get all negative effects
-        //获取所有负面影响
-        for (StatusEffectInstance effect : entity.getStatusEffects()) {
-            if (isNegativeEffect(effect.getEffectType())) {
-                negativeEffectsToRemove.add(effect);
-            }
-        }
-        //remove all negative effects
-        //消除所有负面影响
-        for (StatusEffectInstance effect: negativeEffectsToRemove) {
-            entity.removeStatusEffect(effect.getEffectType());
-        }
-    }
-
-    private boolean isNegativeEffect(RegistryEntry<StatusEffect> effectType) {
-        return effectType == StatusEffects.SLOWNESS
-                || effectType == StatusEffects.MINING_FATIGUE
-                || effectType == StatusEffects.INSTANT_DAMAGE
-                || effectType == StatusEffects.NAUSEA
-                || effectType == StatusEffects.BLINDNESS
-                || effectType == StatusEffects.HUNGER
-                || effectType == StatusEffects.WEAKNESS
-                || effectType == StatusEffects.POISON
-                || effectType == StatusEffects.WITHER
-                || effectType == StatusEffects.LEVITATION
-                || effectType == StatusEffects.UNLUCK
-                || effectType == StatusEffects.DARKNESS
-                || effectType == StatusEffects.WIND_CHARGED
-                || effectType == StatusEffects.WEAVING
-                || effectType == StatusEffects.OOZING
-                || effectType == StatusEffects.INFESTED;
     }
 
     public int getMaxUseTime(ItemStack stack, LivingEntity user) {
