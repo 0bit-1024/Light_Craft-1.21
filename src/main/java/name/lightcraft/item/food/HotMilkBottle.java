@@ -38,22 +38,7 @@ public class HotMilkBottle extends Item {
         if (!world.isClient) {
             //remove all negative effects
             //消除所有负面影响
-            user.removeStatusEffect(StatusEffects.SLOWNESS);
-            user.removeStatusEffect(StatusEffects.MINING_FATIGUE);
-            user.removeStatusEffect(StatusEffects.INSTANT_DAMAGE);
-            user.removeStatusEffect(StatusEffects.NAUSEA);
-            user.removeStatusEffect(StatusEffects.BLINDNESS);
-            user.removeStatusEffect(StatusEffects.HUNGER);
-            user.removeStatusEffect(StatusEffects.WEAKNESS);
-            user.removeStatusEffect(StatusEffects.POISON);
-            user.removeStatusEffect(StatusEffects.WITHER);
-            user.removeStatusEffect(StatusEffects.LEVITATION);
-            user.removeStatusEffect(StatusEffects.UNLUCK);
-            user.removeStatusEffect(StatusEffects.DARKNESS);
-            user.removeStatusEffect(StatusEffects.WIND_CHARGED);
-            user.removeStatusEffect(StatusEffects.WEAVING);
-            user.removeStatusEffect(StatusEffects.OOZING);
-            user.removeStatusEffect(StatusEffects.INFESTED);
+            removeAllNegativeEffects(user);
         }
 
         if (stack.isEmpty()) {
@@ -70,6 +55,25 @@ public class HotMilkBottle extends Item {
 
             return stack;
         }
+    }
+
+    private void removeAllNegativeEffects(LivingEntity entity) {
+        entity.removeStatusEffect(StatusEffects.SLOWNESS);
+        entity.removeStatusEffect(StatusEffects.MINING_FATIGUE);
+        entity.removeStatusEffect(StatusEffects.INSTANT_DAMAGE);
+        entity.removeStatusEffect(StatusEffects.NAUSEA);
+        entity.removeStatusEffect(StatusEffects.BLINDNESS);
+        entity.removeStatusEffect(StatusEffects.HUNGER);
+        entity.removeStatusEffect(StatusEffects.WEAKNESS);
+        entity.removeStatusEffect(StatusEffects.POISON);
+        entity.removeStatusEffect(StatusEffects.WITHER);
+        entity.removeStatusEffect(StatusEffects.LEVITATION);
+        entity.removeStatusEffect(StatusEffects.UNLUCK);
+        entity.removeStatusEffect(StatusEffects.DARKNESS);
+        entity.removeStatusEffect(StatusEffects.WIND_CHARGED);
+        entity.removeStatusEffect(StatusEffects.WEAVING);
+        entity.removeStatusEffect(StatusEffects.OOZING);
+        entity.removeStatusEffect(StatusEffects.INFESTED);
     }
 
     public int getMaxUseTime(ItemStack stack, LivingEntity user) {
