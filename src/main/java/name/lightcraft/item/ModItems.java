@@ -1,7 +1,7 @@
 package name.lightcraft.item;
 
 import name.lightcraft.LightCraft;
-import name.lightcraft.item.custom.Prospector;
+import name.lightcraft.item.custom.HandHeldProspector;
 import name.lightcraft.item.food.HotMilkBottle;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -17,8 +17,7 @@ public class ModItems {
 
     //create mod items
     //创建模组物品
-    public static final Item Prospector = registerItems("prospector", new Prospector(new Item.Settings().maxCount(1).maxDamage(63)));
-
+    public static final Item Prospector = registerItems("handheld_prospector", new HandHeldProspector(new Item.Settings().maxCount(1).maxDamage(64)));
     public static final Item Hot_Milk_Bottle = registerItems("hot_milk_bottle", new HotMilkBottle(new Item.Settings().recipeRemainder(GlASS_BOTTLE).food(FoodComponents.HONEY_BOTTLE).maxCount(16)));
 
     private static Item registerItems(String id, Item item) {

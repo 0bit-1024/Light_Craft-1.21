@@ -9,8 +9,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class Prospector extends Item {
-    public Prospector(Settings settings) {
+public class HandHeldProspector extends Item {
+    public HandHeldProspector(Settings settings) {
         super(settings);
     }
 
@@ -22,6 +22,7 @@ public class Prospector extends Item {
         if (!world.isClient) {
             BlockPos blockPos = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
+            int foundHeight = blockPos.getY();
             boolean foundBlock = false;
 
             /*
@@ -30,19 +31,24 @@ public class Prospector extends Item {
             */
             for (int i = blockPos.getY(); i >= blockPos.getY()-48; i--){
                 BlockState blockState = context.getWorld().getBlockState(
-                        new BlockPos(blockPos.getX(), i, blockPos.getZ()));
+                        new BlockPos(blockPos.getX(), foundHeight, blockPos.getZ()));
                 if (isOre(blockState)){
                     foundBlock = true;
                     player.sendMessage(Text.literal("Prospector: Found " + blockState.getBlock().getName().getString()
-                            + " at (" + blockPos.getX() + "," + i + "," + blockPos.getZ() + ") !"), false);
+                            + " at (" + blockPos.getX() + "," + foundHeight + "," + blockPos.getZ() + ") !"), false);
                     break;
+                } else if (isBlockOrLiquid(blockState)) {
+                    i -= 1;
                 }
+                foundHeight -= 1;
             }
             if (!foundBlock){
                 player.sendMessage(Text.literal("Prospector: No ore found !"), false);
             }
         }
-        //context.getStack().damage(-1, context.getPlayer(), playerEntity -> playerEntity.));
+        //reduce the durability of the item
+        //减少物品的耐久度
+        context.getStack().damage(1, context.getPlayer(), context.getPlayer().getPreferredEquipmentSlot(context.getStack()));
 
         return ActionResult.SUCCESS;
     }
@@ -50,4 +56,6 @@ public class Prospector extends Item {
     private boolean isOre(BlockState blockState) {
         return blockState.getBlock().getTranslationKey().contains("ore");
     }
+
+    private boolean isBlockOrLiquid(BlockState blockState) { return !blockState.isAir(); }
 }
