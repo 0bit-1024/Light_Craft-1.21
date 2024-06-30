@@ -1,6 +1,8 @@
 {
   "item.light_craft.handheld_prospector": "手持探矿器",
   "item.light_craft.hot_milk_bottle": "热牛奶瓶",
+  "item.light_craft.ball_lightning": "球状闪电",
+
   "itemGroup.light_craft.tools": "光艺：工具与实用物品",
   "itemGroup.light_craft.food_and_drinks": "光艺：食品与饮品"
 }
