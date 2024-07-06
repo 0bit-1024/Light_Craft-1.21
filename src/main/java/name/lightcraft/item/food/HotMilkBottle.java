@@ -1,5 +1,6 @@
 package name.lightcraft.item.food;
 
+import name.lightcraft.item.ModItems;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffects;
@@ -36,11 +37,11 @@ public class HotMilkBottle extends Item {
         }
 
         if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
+            return new ItemStack(ModItems.CYLINDRICAL_GLASS_BOTTLE);
         } else {
             if (user instanceof PlayerEntity playerEntity) {
                 if (!playerEntity.isInCreativeMode()) {
-                    ItemStack itemStack = new ItemStack(Items.GLASS_BOTTLE);
+                    ItemStack itemStack = new ItemStack(ModItems.CYLINDRICAL_GLASS_BOTTLE);
                     if (!playerEntity.getInventory().insertStack(itemStack)) {
                         playerEntity.dropItem(itemStack, false);
                     }
@@ -63,6 +64,7 @@ public class HotMilkBottle extends Item {
         entity.removeStatusEffect(StatusEffects.WITHER);
         entity.removeStatusEffect(StatusEffects.LEVITATION);
         entity.removeStatusEffect(StatusEffects.UNLUCK);
+        entity.removeStatusEffect(StatusEffects.BAD_OMEN);
         entity.removeStatusEffect(StatusEffects.DARKNESS);
         entity.removeStatusEffect(StatusEffects.WIND_CHARGED);
         entity.removeStatusEffect(StatusEffects.WEAVING);

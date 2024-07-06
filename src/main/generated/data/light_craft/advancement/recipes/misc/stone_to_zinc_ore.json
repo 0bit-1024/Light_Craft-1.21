@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_zinc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "light_craft:raw_zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "light_craft:stone_to_zinc_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_zinc",
+      "has_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "light_craft:stone_to_zinc_ore"
+    ]
+  }
+}

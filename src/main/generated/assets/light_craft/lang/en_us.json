@@ -1,0 +1,15 @@
+{
+  "block.light_craft.deepslate_zinc_ore": "Deepslate Zinc Ore",
+  "block.light_craft.zinc_block": "Zinc Block",
+  "block.light_craft.zinc_ore": "Zinc Ore",
+  "item.light_craft.cylindrical_glass_bottle": "Cylindrical Glass Bottle",
+  "item.light_craft.handheld_prospector": "Handheld Prospector",
+  "item.light_craft.hot_milk_bottle": "Hot Milk Bottle",
+  "item.light_craft.raw_zinc": "Raw Zinc",
+  "item.light_craft.zinc_ingot": "Zinc Ingot",
+  "itemGroup.light_craft.building": "Light Craft: Building Blocks",
+  "itemGroup.light_craft.food_and_drinks": "Light Craft: Food and Drinks",
+  "itemGroup.light_craft.ingredients": "Light Craft: Ingredients",
+  "itemGroup.light_craft.natural": "Light Craft: Natural Blocks",
+  "itemGroup.light_craft.tools": "Light Craft: Tools"
+}

@@ -1,0 +1,15 @@
+{
+  "block.light_craft.deepslate_zinc_ore": "深层锌矿石",
+  "block.light_craft.zinc_block": "锌块",
+  "block.light_craft.zinc_ore": "锌矿石",
+  "item.light_craft.cylindrical_glass_bottle": "柱形玻璃瓶",
+  "item.light_craft.handheld_prospector": "手持探矿器",
+  "item.light_craft.hot_milk_bottle": "热奶瓶",
+  "item.light_craft.raw_zinc": "粗锌矿",
+  "item.light_craft.zinc_ingot": "锌锭",
+  "itemGroup.light_craft.building": "光艺：建筑方块",
+  "itemGroup.light_craft.food_and_drinks": "光艺：食物与饮品",
+  "itemGroup.light_craft.ingredients": "光艺：原材料",
+  "itemGroup.light_craft.natural": "光艺：自然方块",
+  "itemGroup.light_craft.tools": "光艺：工具与实用物品"
+}

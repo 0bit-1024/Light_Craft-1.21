@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "light_craft:item/cylindrical_glass_bottle"
+  }
+}

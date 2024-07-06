@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "~": {
+      "item": "light_craft:raw_zinc"
+    }
+  },
+  "pattern": [
+    "#~#",
+    "~#~",
+    "#~#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "light_craft:zinc_ore"
+  }
+}
