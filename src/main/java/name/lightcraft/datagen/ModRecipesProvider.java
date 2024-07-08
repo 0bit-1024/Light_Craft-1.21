@@ -37,7 +37,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerSmelting(exporter, ZINC_INGOT, RecipeCategory.MISC, ModItems.ZINC_INGOT, 0.7f, 240, "zinc");
         offerBlasting(exporter, ZINC_INGOT, RecipeCategory.MISC, ModItems.ZINC_INGOT, 0.7f, 120, "zinc");
 
-        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Blocks.GLASS), RecipeCategory.MISC, ModItems.CYLINDRICAL_GLASS_BOTTLE);
+        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Blocks.GLASS), RecipeCategory.MISC, ModItems.CYLINDRICAL_GLASS_BOTTLE)
+                .criterion("has_glass", conditionsFromItem(Blocks.GLASS))
+                .offerTo(exporter, "cylindrical_glass_bottle_from_glass_stonecutting");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ZINC_ORE, 1)
                 .pattern("#~#")

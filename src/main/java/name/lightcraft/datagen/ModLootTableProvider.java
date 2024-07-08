@@ -35,7 +35,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     }
 
     // 自定义矿石掉落的凋落物，掉落数量区间
-    public LootTable.Builder CustomOreDrops(Block drop, Item dropItem, float min_count, float max_count) {
+    private LootTable.Builder CustomOreDrops(Block drop, Item dropItem, float min_count, float max_count) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(
                 drop,

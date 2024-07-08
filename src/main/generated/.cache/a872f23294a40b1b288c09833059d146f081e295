@@ -1,10 +1,13 @@
-// 1.21	2024-07-06T14:44:26.4710979	Light Craft/Model Definitions
+// 1.21	2024-07-08T16:10:58.595385	Light Craft/Model Definitions
+5070112fda8dcac395afa67c8c44bd14f0eea62b assets\light_craft\blockstates\sphalerite_ore.json
 5bb880472733e519217c592ec05baf43019ef7ab assets\light_craft\models\block\deepslate_zinc_ore.json
-5ee38e36600a0bcf2c86de4e45ddc140b12214c7 assets\light_craft\blockstates\zinc_block.json
 9990b883f9026b721d884872405b5e56364b9ccc assets\light_craft\models\block\zinc_ore.json
 c37d583b1d3e887740d535a057cac0efe60f0987 assets\light_craft\blockstates\deepslate_zinc_ore.json
 d4e39ef5914153e111d8d0685ab46543e4d097fc assets\light_craft\models\item\zinc_block.json
+bdece3a0c2b418a4516a4836bb3b8db83e3cf1a8 assets\light_craft\models\item\zinc_ore.json
+d3785c220614de77c6472d4247b2c7cdd6a1cd7e assets\light_craft\models\block\sphalerite_ore.json
+5ee38e36600a0bcf2c86de4e45ddc140b12214c7 assets\light_craft\blockstates\zinc_block.json
+e456c364facbe0bb4be9935d6c6345d4001b3db2 assets\light_craft\models\item\sphalerite_ore.json
 c32405d03c9eb0f1c2bacf826f3a1038e5d03f6c assets\light_craft\blockstates\zinc_ore.json
 f3ca5643518a16ac269d59192bc953e50f52db48 assets\light_craft\models\item\deepslate_zinc_ore.json
-bdece3a0c2b418a4516a4836bb3b8db83e3cf1a8 assets\light_craft\models\item\zinc_ore.json
 7b162b5793d276839a71d917e63b9af52f02f48f assets\light_craft\models\block\zinc_block.json

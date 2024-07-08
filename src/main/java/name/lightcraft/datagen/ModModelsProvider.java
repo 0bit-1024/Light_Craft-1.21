@@ -17,6 +17,7 @@ public class ModModelsProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZINC_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ZINC_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPHALERITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZINC_BLOCK);
 
     }

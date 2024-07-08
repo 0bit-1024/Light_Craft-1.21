@@ -21,6 +21,7 @@ public class ModItemGroups {
                         //添加物品
                         entries.add(ModBlocks.ZINC_ORE);
                         entries.add(ModBlocks.DEEPSLATE_ZINC_ORE);
+                        entries.add(ModBlocks.SPHALERITE_ORE);
                     }).build());
 
     public static final ItemGroup LIGHT_CRAFT_BUILDING  = Registry.register(Registries.ITEM_GROUP,

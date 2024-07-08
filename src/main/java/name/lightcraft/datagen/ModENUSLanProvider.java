@@ -29,6 +29,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.ZINC_ORE, "Zinc Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_ZINC_ORE, "Deepslate Zinc Ore");
+        translationBuilder.add(ModBlocks.SPHALERITE_ORE, "Sphalerite Ore");
         translationBuilder.add(ModBlocks.ZINC_BLOCK, "Zinc Block");
 
     }

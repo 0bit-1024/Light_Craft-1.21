@@ -19,12 +19,14 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ZINC_ORE)
                 .add(ModBlocks.DEEPSLATE_ZINC_ORE)
+                .add(ModBlocks.SPHALERITE_ORE)
                 .add(ModBlocks.ZINC_BLOCK);
 
         // 添加方块标签：开采工具至少为铁制工具
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ZINC_ORE)
                 .add(ModBlocks.DEEPSLATE_ZINC_ORE)
+                .add(ModBlocks.SPHALERITE_ORE)
                 .add(ModBlocks.ZINC_BLOCK);
     }
 }

@@ -29,6 +29,7 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.ZINC_ORE, "锌矿石");
         translationBuilder.add(ModBlocks.DEEPSLATE_ZINC_ORE, "深层锌矿石");
+        translationBuilder.add(ModBlocks.SPHALERITE_ORE, "闪锌矿");
         translationBuilder.add(ModBlocks.ZINC_BLOCK, "锌块");
     }
 }
