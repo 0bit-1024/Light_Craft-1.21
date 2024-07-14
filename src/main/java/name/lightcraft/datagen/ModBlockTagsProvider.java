@@ -15,14 +15,14 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        // 添加方块标签：使用镐子开采的方块
+        // 添加方块标签：使用***镐子***开采的方块
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ZINC_ORE)
                 .add(ModBlocks.DEEPSLATE_ZINC_ORE)
                 .add(ModBlocks.SPHALERITE_ORE)
                 .add(ModBlocks.ZINC_BLOCK);
 
-        // 添加方块标签：开采工具至少为铁制工具
+        // 添加方块标签：开采工具至少为***铁制工具***
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ZINC_ORE)
                 .add(ModBlocks.DEEPSLATE_ZINC_ORE)

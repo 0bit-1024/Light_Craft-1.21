@@ -32,5 +32,13 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SPHALERITE_ORE, "Sphalerite Ore");
         translationBuilder.add(ModBlocks.ZINC_BLOCK, "Zinc Block");
 
+        translationBuilder.add("item.light_craft.handheld_prospector.found_ore_message", "Prospector: Found ");
+        translationBuilder.add("item.light_craft.handheld_prospector.not_found_message", "Prospector: No Ore Found");
+        translationBuilder.add("item.light_craft.handheld_prospector.tooltip","\u00a77A useful tool used to look for ores\u00a7r");
+        translationBuilder.add("item.light_craft.handheld_prospector.tooltip.not_shift", "Press \u00a76SHIFT\u00a7r for more information");
+        translationBuilder.add("item.light_craft.handheld_prospector.tooltip.shift", "After being used on a \u00a76block\u00a7r, it will be detected from \u00a7924\u00a7r to \u00a7948\u00a7r blocks down, returning only the \u00a77first\u00a7r mineral");
+        translationBuilder.add("item.light_craft.hot_milk_bottle.tip", "An unremarkable drink, the only difference from milk seems to be only the temperature... Right?");
+        translationBuilder.add("item.light_craft.hot_milk_bottle.use_tip", "After drinking, restore a certain amount of nutrition (saturation) , and \u00a76clear all negative effects\u00a7r");
+
     }
 }
